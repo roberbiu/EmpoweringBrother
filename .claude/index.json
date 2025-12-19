@@ -1,0 +1,270 @@
+{
+  "project_name": "EmpoweringBrother",
+  "project_type": "BMad Method Framework",
+  "version": "4.44.3",
+  "scan_metadata": {
+    "timestamp": "2025-12-19T10:12:29.000Z",
+    "scan_type": "full_initialization",
+    "coverage": {
+      "total_files": 115,
+      "scanned_files": 115,
+      "percentage": 100
+    }
+  },
+  "modules": [
+    {
+      "path": ".bmad-core",
+      "name": "BMad Core Framework",
+      "type": "framework",
+      "language": "markdown+yaml",
+      "entry_points": [
+        "core-config.yaml"
+      ],
+      "description": "BMad Method 核心框架，提供完整的 AI 驱动敏捷开发基础设施",
+      "components": {
+        "agents": {
+          "path": "agents/",
+          "count": 10,
+          "files": [
+            "analyst.md",
+            "architect.md",
+            "bmad-master.md",
+            "bmad-orchestrator.md",
+            "dev.md",
+            "pm.md",
+            "po.md",
+            "qa.md",
+            "sm.md",
+            "ux-expert.md"
+          ]
+        },
+        "tasks": {
+          "path": "tasks/",
+          "count": 27,
+          "categories": [
+            "风险管理",
+            "测试设计",
+            "文档管理",
+            "质量保证",
+            "Story管理"
+          ]
+        },
+        "workflows": {
+          "path": "workflows/",
+          "count": 6,
+          "types": [
+            "greenfield-fullstack",
+            "greenfield-service",
+            "greenfield-ui",
+            "brownfield-fullstack",
+            "brownfield-service",
+            "brownfield-ui"
+          ]
+        },
+        "templates": {
+          "path": "templates/",
+          "count": 13,
+          "types": [
+            "prd",
+            "architecture",
+            "story",
+            "qa-gate",
+            "front-end-spec"
+          ]
+        },
+        "data": {
+          "path": "data/",
+          "count": 6,
+          "types": [
+            "knowledge-base",
+            "test-frameworks",
+            "technical-preferences"
+          ]
+        },
+        "checklists": {
+          "path": "checklists/",
+          "count": 6
+        }
+      },
+      "key_files": [
+        "core-config.yaml",
+        "user-guide.md",
+        "working-in-the-brownfield.md",
+        "enhanced-ide-development-workflow.md",
+        "install-manifest.yaml"
+      ],
+      "interfaces": {
+        "config": "core-config.yaml",
+        "documentation": [
+          "user-guide.md",
+          "working-in-the-brownfield.md"
+        ]
+      },
+      "dependencies": [],
+      "test_directory": null,
+      "has_tests": false,
+      "coverage": {
+        "agents": "10/10 完整",
+        "tasks": "27/27 完整",
+        "workflows": "6/6 完整",
+        "templates": "13/13 完整",
+        "data": "6/6 完整",
+        "documentation": "完整"
+      }
+    },
+    {
+      "path": ".claude",
+      "name": "Claude IDE Integration",
+      "type": "ide_integration",
+      "language": "markdown",
+      "entry_points": [
+        "commands/BMad/"
+      ],
+      "description": "Claude Code IDE 集成配置，通过 / 命令激活 BMad 代理和任务",
+      "components": {
+        "agents": {
+          "path": "commands/BMad/agents/",
+          "count": 10,
+          "note": "镜像 .bmad-core/agents/"
+        },
+        "tasks": {
+          "path": "commands/BMad/tasks/",
+          "count": 27,
+          "note": "镜像 .bmad-core/tasks/"
+        }
+      },
+      "interfaces": {
+        "activation": "Claude Code slash commands (/pm, /architect, /dev, /qa, etc.)"
+      },
+      "dependencies": [
+        ".bmad-core"
+      ],
+      "coverage": {
+        "agents": "10/10 (与 .bmad-core 同步)",
+        "tasks": "27/27 (与 .bmad-core 同步)"
+      }
+    },
+    {
+      "path": ".spec-workflow",
+      "name": "Spec Workflow Templates",
+      "type": "templates",
+      "language": "markdown",
+      "entry_points": [
+        "templates/"
+      ],
+      "description": "补充的规范工作流模板，提供额外的结构化文档模板",
+      "components": {
+        "templates": {
+          "path": "templates/",
+          "count": 6,
+          "files": [
+            "requirements-template.md",
+            "design-template.md",
+            "tasks-template.md",
+            "product-template.md",
+            "tech-template.md",
+            "structure-template.md"
+          ]
+        },
+        "documentation": {
+          "path": "user-templates/",
+          "files": [
+            "README.md"
+          ]
+        }
+      },
+      "interfaces": {
+        "usage": "轻量级 Markdown 模板，适合快速原型设计"
+      },
+      "dependencies": [],
+      "coverage": {
+        "templates": "6/6 完整"
+      }
+    }
+  ],
+  "root_documentation": {
+    "main": "CLAUDE.md",
+    "created_at": "2025-12-19T10:12:29.000Z",
+    "sections": [
+      "项目愿景",
+      "架构总览",
+      "模块结构图",
+      "模块索引",
+      "运行与开发",
+      "测试策略",
+      "编码规范",
+      "AI 使用指引",
+      "覆盖率报告"
+    ]
+  },
+  "file_statistics": {
+    "by_type": {
+      "markdown": {
+        "count": 91,
+        "percentage": 79.1
+      },
+      "yaml": {
+        "count": 24,
+        "percentage": 20.9
+      }
+    },
+    "by_directory": {
+      ".bmad-core": 93,
+      ".claude": 20,
+      ".spec-workflow": 7
+    }
+  },
+  "ignore_rules": {
+    "source": "default (no .gitignore found)",
+    "patterns": [
+      "node_modules/**",
+      ".git/**",
+      ".github/**",
+      "dist/**",
+      "build/**",
+      ".next/**",
+      "__pycache__/**",
+      "*.lock",
+      "*.log",
+      "*.bin",
+      "*.pdf",
+      "*.png",
+      "*.jpg",
+      "*.jpeg",
+      "*.gif",
+      "*.mp4",
+      "*.zip",
+      "*.tar",
+      "*.gz"
+    ]
+  },
+  "gaps_and_recommendations": {
+    "missing_documentation": [],
+    "missing_interfaces": [],
+    "missing_tests": [
+      "整个项目无测试代码（文档框架项目，符合预期）"
+    ],
+    "missing_data_models": [
+      "无数据模型（文档框架项目，符合预期）"
+    ],
+    "suggestions": [
+      "创建 docs/ 目录及基础文档结构 (prd, architecture, qa, stories)",
+      "创建源代码目录 src/ 和测试目录 tests/ (如开始实际开发)",
+      "添加 .gitignore 文件",
+      "自定义 .bmad-core/data/technical-preferences.md",
+      "初始化 docs/architecture/ 碎片文档 (coding-standards.md, tech-stack.md, source-tree.md)"
+    ]
+  },
+  "next_scan_priority": [
+    "docs/ (如已创建)",
+    "src/ (如已创建)",
+    "tests/ (如已创建)",
+    "package.json (如已创建)"
+  ],
+  "truncated": false,
+  "scan_completion": {
+    "status": "complete",
+    "reason": "所有文件已成功扫描",
+    "remaining_directories": []
+  }
+}
