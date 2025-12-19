@@ -12,7 +12,7 @@
 [![Vite](https://img.shields.io/badge/Vite-5.x-646cff.svg)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-38bdf8.svg)](https://tailwindcss.com/)
 
-[在线体验 Demo](https://empoweringbrother.vercel.app) · [报告问题 Issues](https://github.com/roberbiu/EmpoweringBrother/issues) · [功能建议 Feature Request](https://github.com/roberbiu/EmpoweringBrother/issues)
+[在线体验 Demo](https://empowering-brother.vercel.app) · [报告问题 Issues](https://github.com/sleepland/empowering-brother/issues) · [功能建议 Feature Request](https://github.com/sleepland/empowering-brother/issues)
 
 </div>
 
@@ -112,7 +112,7 @@
 
 直接访问部署地址即可使用，无需任何安装：
 
-👉 **[https://empoweringbrother.vercel.app](https://empoweringbrother.vercel.app)**
+👉 **[https://empowering-brother.vercel.app](https://empowering-brother.vercel.app)**
 
 ### 本地开发
 
@@ -125,10 +125,10 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/roberbiu/EmpoweringBrother.git
+git clone https://github.com/sleepland/empowering-brother.git
 
 # 2. 进入项目目录
-cd EmpoweringBrother
+cd empowering-brother
 
 # 3. 安装依赖
 npm install
@@ -208,7 +208,7 @@ npm run preview
 
 ### 问题反馈
 
-如果你发现了 Bug 或有功能建议，请通过 [GitHub Issues](https://github.com/roberbiu/EmpoweringBrother/issues) 提交。
+如果你发现了 Bug 或有功能建议，请通过 [GitHub Issues](https://github.com/sleepland/empowering-brother/issues) 提交。
 
 ## 📄 开源许可证
 
@@ -217,7 +217,7 @@ npm run preview
 ```
 MIT License
 
-Copyright (c) 2024 roberbiu
+Copyright (c) 2024 sleepland
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -334,7 +334,7 @@ Major technical challenges overcome during development:
 
 Visit the deployed URL directly, no installation required:
 
-👉 **[https://empoweringbrother.vercel.app](https://empoweringbrother.vercel.app)**
+👉 **[https://empowering-brother.vercel.app](https://empowering-brother.vercel.app)**
 
 ### Local Development
 
@@ -347,10 +347,10 @@ Visit the deployed URL directly, no installation required:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/roberbiu/EmpoweringBrother.git
+git clone https://github.com/sleepland/empowering-brother.git
 
 # 2. Enter project directory
-cd EmpoweringBrother
+cd empowering-brother
 
 # 3. Install dependencies
 npm install
@@ -430,7 +430,7 @@ Contributions of any kind are welcome! Whether it's reporting bugs, suggesting n
 
 ### Issue Reporting
 
-If you find a bug or have a feature suggestion, please submit it via [GitHub Issues](https://github.com/roberbiu/EmpoweringBrother/issues).
+If you find a bug or have a feature suggestion, please submit it via [GitHub Issues](https://github.com/sleepland/empowering-brother/issues).
 
 ## 📄 License
 
@@ -439,7 +439,7 @@ This project is open source under the **MIT License**.
 ```
 MIT License
 
-Copyright (c) 2024 roberbiu
+Copyright (c) 2024 sleepland
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -468,6 +468,6 @@ SOFTWARE.
 
 *If this project helps you, please give it a ⭐ Star!*
 
-Made with ❤️ by [roberbiu](https://github.com/roberbiu)
+Made with ❤️ by [sleepland](https://github.com/sleepland)
 
 </div>
